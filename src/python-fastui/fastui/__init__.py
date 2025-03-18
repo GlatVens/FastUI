@@ -58,13 +58,13 @@ def prebuilt_html(
     # language=HTML
     return f"""\
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <script type="module" crossorigin src="{_PREBUILT_CDN_URL}/index.js"></script>
-    <link rel="stylesheet" crossorigin href="{_PREBUILT_CDN_URL}/index.css">
+    <script type="module" crossorigin src="/app/static/templates/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/app/static/templates/index.css">
     {meta_extra_str}
   </head>
   <body>
